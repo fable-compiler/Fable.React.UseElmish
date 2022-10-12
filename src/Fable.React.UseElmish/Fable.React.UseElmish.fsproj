@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Description>useElmish React hook to use Elmish at the component level</Description>
+        <Version>0.0.0</Version>
+        <PackageVersion>0.0.0</PackageVersion>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Fable.React.UseElmish.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="*.fsproj; *.fs; *.js;" Exclude="**\*.fs.js" PackagePath="fable\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="FSharp.Core" Version="4.7.2" />
+        <PackageReference Include="Fable.Elmish" Version="4.0.0-beta-5" />
+    </ItemGroup>
+</Project>
